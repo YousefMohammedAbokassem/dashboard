@@ -1,0 +1,89 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --hover-color: #f6f6f6;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  color: #fff;
+}
+*::selection {
+  color: #fff;
+}
+
+header {
+  background-color: var(--main-color);
+}
+header > .searchInput > input {
+  outline: none;
+  width: 160px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 25px;
+  transition: width 0.3s;
+}
+header > .searchInput > input:focus {
+  width: 200px;
+}
+header > .searchInput > .searchIcon {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header > .account > .LightNight {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  margin-right: 10px;
+  padding: 10px 5px;
+  border-radius: 30px;
+  background-color: var(--text-color);
+}
+header > .account > .LightNight > span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--main-color);
+  transform: translateX(2.5rem);
+  transition: 0.3s;
+}
+header > .account > .LightNight > .theme {
+  color: var(--main-color);
+  font-size: 21px;
+  cursor: pointer;
+}
+header > .account > span {
+  position: relative;
+}
+header > .account > span > .notification {
+  font-size: 22px;
+}
+header > .account > span::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  right: -3px;
+  top: -3px;
+}
+header > .account > .accountImage > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}/*# sourceMappingURL=Header.css.map */

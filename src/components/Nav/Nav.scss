@@ -1,0 +1,48 @@
+@import "../../var";
+nav {
+  box-shadow: 0 0 10px #ddd;
+  background-color: var(--main-color);
+  @include media("mobile") {
+    padding: 10px;
+  }
+  > div > h2 {
+    color: var(--text-color);
+    @include media("mobile") {
+      font-size: 15px;
+    }
+  }
+  font-size: 14px;
+  hr {
+    border-top: 2px solid var(--text-color);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -11px;
+      transform: translateX(-50%);
+      @include circle(20px);
+      background-color: var(--text-color);
+      border: 4px solid var(--main-color);
+    }
+  }
+  > a {
+    color: var(--main-color);
+    border-radius: 6px;
+    &:hover,
+    &.active {
+      background-color: var(--hover-color);
+      //   #f6f6f6
+      > span,
+      i {
+        color: var(--text-color);
+      }
+    }
+    i {
+      justify-self: flex-start;
+    }
+    // span,
+    // i {
+    // }
+  }
+}
