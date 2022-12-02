@@ -4,7 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 export default function Nav() {
   useEffect(() => {}, []);
   return (
-   
     <nav
       className=" h-100 wow animate__fadeIn  position-relative p-md-4 w-100"
       data-wow-duration="4s"

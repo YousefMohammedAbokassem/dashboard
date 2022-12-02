@@ -2,6 +2,8 @@
   --main-color: #fff;
   --text-color: #000;
   --hover-color: #f6f6f6;
+  --shadow-color: #ddd;
+  --section-color: #f1f5f9;
   --SpText-color: #eb5424;
   --main-transition: 0.5s;
 }
@@ -20,7 +22,7 @@
 }
 
 nav {
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px var(--shadow-color);
   background-color: var(--main-color);
   font-size: 14px;
 }

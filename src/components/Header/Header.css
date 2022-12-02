@@ -2,6 +2,8 @@
   --main-color: #fff;
   --text-color: #000;
   --hover-color: #f6f6f6;
+  --shadow-color: #ddd;
+  --section-color: #f1f5f9;
   --SpText-color: #eb5424;
   --main-transition: 0.5s;
 }
@@ -21,6 +23,7 @@
 
 header {
   background-color: var(--main-color);
+  box-shadow: 0px 1px 9px var(--shadow-color);
 }
 header > .searchInput > input {
   outline: none;
@@ -29,16 +32,32 @@ header > .searchInput > input {
   border-radius: 10px;
   font-size: 14px;
   padding-left: 25px;
-  transition: width 0.3s;
+  transition: padding, width, 0.3s;
+  background-color: var(--main-color);
+  text-transform: capitalize;
 }
 header > .searchInput > input:focus {
   width: 200px;
+  padding-left: 30px;
+}
+header > .searchInput > input::-moz-placeholder {
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+header > .searchInput > input:-ms-input-placeholder {
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+header > .searchInput > input::placeholder {
+  color: var(--text-color);
+  text-transform: capitalize;
 }
 header > .searchInput > .searchIcon {
   position: absolute;
   left: 6px;
   top: 50%;
   transform: translateY(-50%);
+  color: var(--text-color);
 }
 header > .account > .LightNight {
   cursor: pointer;

@@ -1,0 +1,21 @@
+@import "../../var";
+.page {
+  position: relative;
+  color: var(--text-color);
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0px;
+    top: 50px;
+  }
+  &::before {
+    width: 100px;
+    background: var(--main-color);
+  }
+  &::after {
+    width: 40px;
+    background: var(--text-color);
+  }
+}

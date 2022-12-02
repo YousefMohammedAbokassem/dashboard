@@ -6,13 +6,52 @@ export default function Header() {
     const themeSpan = document.querySelector(".themeSpan");
     if (toggle) {
       themeSpan.style.cssText = "transform: translateX(0rem);";
+      sessionStorage.setItem("mainColor", "#000");
+      sessionStorage.setItem("textColor", "#fff");
+      sessionStorage.setItem("hoverColor", "#b5b5b5");
+      sessionStorage.setItem("shadowColor", "#000");
+      sessionStorage.setItem("toggle", toggle);
+
+      document.documentElement.style.setProperty("--main-color", "#000");
+      document.documentElement.style.setProperty("--text-color", "#fff");
+      document.documentElement.style.setProperty("--hover-color", "#b5b5b5");
+      document.documentElement.style.setProperty("--shadow-color", "#000");
+
       toggle = !toggle;
     } else {
       themeSpan.style.cssText = "transform: translateX(2.5rem);";
+      sessionStorage.setItem("mainColor", "#fff");
+      sessionStorage.setItem("textColor", "#000");
+      sessionStorage.setItem("hoverColor", "#f6f6f6");
+      sessionStorage.setItem("shadowColor", "#ddd");
+      sessionStorage.setItem("toggle", toggle);
+
+      document.documentElement.style.setProperty("--main-color", "#fff");
+      document.documentElement.style.setProperty("--text-color", "#000");
+      document.documentElement.style.setProperty("--hover-color", "#f6f6f6");
+      document.documentElement.style.setProperty("--shadow-color", "#ddd");
       toggle = !toggle;
     }
   };
-  useEffect(() => {}, []);
+  useEffect(() => {
+    let sessionToggle = sessionStorage.getItem("toggle");
+    const themeSpan = document.querySelector(".themeSpan");
+    if (sessionToggle !== null) {
+      if (sessionToggle === "true") {
+        themeSpan.style.cssText = "transform: translateX(0rem);";
+        document.documentElement.style.setProperty("--main-color", "#000");
+        document.documentElement.style.setProperty("--text-color", "#fff");
+        document.documentElement.style.setProperty("--hover-color", "#b5b5b5");
+        document.documentElement.style.setProperty("--shadow-color", "#000");
+      } else {
+        themeSpan.style.cssText = "transform: translateX(2.5rem);";
+        document.documentElement.style.setProperty("--main-color", "#fff");
+        document.documentElement.style.setProperty("--text-color", "#000");
+        document.documentElement.style.setProperty("--hover-color", "#f6f6f6");
+        document.documentElement.style.setProperty("--shadow-color", "#ddd");
+      }
+    }
+  }, []);
   return (
     <header className="d-flex justify-content-between align-items-center py-3 px-4">
       <div className="searchInput d-flex justify-content-center align-items-center position-relative">

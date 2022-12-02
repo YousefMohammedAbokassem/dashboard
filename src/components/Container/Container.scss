@@ -1,5 +1,14 @@
 @import "../../var";
-body {
-  // background-color: red;
-  font-family: "Marhey", "cursive";
+.Nav {
+  width: 200px;
+  @include media("mobile") {
+    width: 50px;
+  }
+}
+
+.cont {
+  width: calc(100% - 200px);
+  @include media("mobile") {
+    width: calc(100% - 50px);
+  }
 }

@@ -21,20 +21,22 @@
   color: #fff;
 }
 
-.Nav {
-  width: 200px;
+.page {
+  position: relative;
+  color: var(--text-color);
 }
-@media (max-width:767px) {
-  .Nav {
-    width: 50px;
-  }
+.page::before, .page::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0px;
+  top: 50px;
 }
-
-.cont {
-  width: calc(100% - 200px);
+.page::before {
+  width: 100px;
+  background: var(--main-color);
 }
-@media (max-width:767px) {
-  .cont {
-    width: calc(100% - 50px);
-  }
-}/*# sourceMappingURL=Container.css.map */
+.page::after {
+  width: 40px;
+  background: var(--text-color);
+}/*# sourceMappingURL=page.css.map */

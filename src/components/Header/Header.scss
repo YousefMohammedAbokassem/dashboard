@@ -1,6 +1,7 @@
 @import "../../var";
 header {
   background-color: var(--main-color);
+  box-shadow: 0px 1px 9px var(--shadow-color);
   > .searchInput {
     > input {
       outline: none;
@@ -9,9 +10,17 @@ header {
       border-radius: 10px;
       font-size: 14px;
       padding-left: 25px;
-      transition: width 0.3s;
+      transition: padding, width, 0.3s;
+      background-color: var(--main-color);
+      text-transform: capitalize;
+
       &:focus {
         width: 200px;
+        padding-left: 30px;
+      }
+      &::placeholder {
+        color: var(--text-color);
+        text-transform: capitalize;
       }
     }
     > .searchIcon {
@@ -19,6 +28,7 @@ header {
       left: 6px;
       top: 50%;
       transform: translateY(-50%);
+      color: var(--text-color);
     }
   }
   > .account {

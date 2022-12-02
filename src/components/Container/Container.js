@@ -7,6 +7,7 @@ import "./Container.css";
 import "./css/all.min.css";
 import Header from "../Header/Header";
 import WOW from "wowjs";
+import Dashboard from "../Dashbard/Dashboard";
 
 export default function Container() {
   useEffect(()=>{
@@ -17,14 +18,14 @@ export default function Container() {
   return (
     <BrowserRouter>
       <div className="d-flex justify-content-center ">
-        <div className="nav w-25">
+        <div className="nav Nav">
           <Nav />
         </div>
-        <div className=" flex-grow-1">
+        <div className="cont">
           <Header />
           {/* <FontAwesomeIcon icon="fa-brands fa-facebook" /> */}
           <Routes>
-            <Route path="/files/" element={<Nav />} />
+            <Route path="/dashboard/" element={<Dashboard />} />
           </Routes>
         </div>
       </div>
