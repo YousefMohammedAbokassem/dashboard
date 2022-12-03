@@ -6,6 +6,12 @@
   --section-color: #f1f5f9;
   --SpText-color: #eb5424;
   --main-transition: 0.5s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 
 * {
@@ -21,8 +27,71 @@
   color: #fff;
 }
 
+/* Start Color */
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.radius {
+  border-radius: 15px;
+}
+
 .dashboard {
   background-color: #f1f5f9;
+}
+.dashboard .row > div {
+  height: 450px;
+}
+.dashboard .row > div > div {
+  border-radius: 15px;
 }
 .dashboard > .parent .Container {
   border-radius: 15px;
@@ -66,5 +135,71 @@
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
-  margin: 10px 10px 0px auto;
+  margin: 42px 10px 0px auto;
+}
+.dashboard .quickDraftParent .quickDraft {
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+.dashboard .quickDraftParent .quickDraft form input:first-child,
+.dashboard .quickDraftParent .quickDraft form textarea {
+  background-color: #a1a1a1;
+  color: var(--main-color);
+  outline: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+.dashboard .quickDraftParent .quickDraft form input:first-child::-moz-placeholder, .dashboard .quickDraftParent .quickDraft form textarea::-moz-placeholder {
+  color: var(--main-color);
+}
+.dashboard .quickDraftParent .quickDraft form input:first-child:-ms-input-placeholder, .dashboard .quickDraftParent .quickDraft form textarea:-ms-input-placeholder {
+  color: var(--main-color);
+}
+.dashboard .quickDraftParent .quickDraft form input:first-child::placeholder,
+.dashboard .quickDraftParent .quickDraft form textarea::placeholder {
+  color: var(--main-color);
+}
+.dashboard .quickDraftParent .quickDraft form textarea {
+  height: 200px;
+}
+.dashboard .quickDraftParent .quickDraft form input:last-child {
+  align-self: flex-end;
+  padding: 5px 8px;
+  border-radius: 9px;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+.dashboard .tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+}
+@media (max-width:1199px) {
+  .dashboard .tickets {
+    height: auto !important;
+  }
+}
+.dashboard .tickets section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+  flex: 1;
+}
+@media (max-width:1199px) {
+  .dashboard .tickets section {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    height: auto;
+  }
+}
+.dashboard .tickets section > div {
+  border: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+.dashboard .tickets > p {
+  align-self: flex-start;
 }/*# sourceMappingURL=dashboard.css.map */

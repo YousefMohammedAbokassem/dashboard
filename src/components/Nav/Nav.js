@@ -2,14 +2,8 @@ import React, { useEffect } from "react";
 import "./Nav.css";
 import { Link, NavLink } from "react-router-dom";
 export default function Nav() {
-  useEffect(() => {}, []);
   return (
-    <nav
-      className=" h-100 wow animate__fadeIn  position-relative p-md-4 w-100"
-      data-wow-duration="4s"
-      // data-wow-iteration="10"
-      // data-wow-delay=".5s"
-    >
+    <nav className=" h-100 position-relative p-md-4 w-100">
       <div className="my-4 ">
         <h2 className="d-flex justify-content-center align-items-center fw-bold ">
           AYA

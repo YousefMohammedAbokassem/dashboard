@@ -10,11 +10,11 @@ import WOW from "wowjs";
 import Dashboard from "../Dashbard/Dashboard";
 
 export default function Container() {
-  useEffect(()=>{
-       new WOW.WOW({
-         live: false,
-       }).init();
-  },[])
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
   return (
     <BrowserRouter>
       <div className="d-flex justify-content-center ">

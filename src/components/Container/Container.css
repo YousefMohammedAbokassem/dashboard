@@ -6,6 +6,12 @@
   --section-color: #f1f5f9;
   --SpText-color: #eb5424;
   --main-transition: 0.5s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 
 * {
@@ -19,6 +25,63 @@
 }
 *::selection {
   color: #fff;
+}
+
+/* Start Color */
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.radius {
+  border-radius: 15px;
 }
 
 .Nav {

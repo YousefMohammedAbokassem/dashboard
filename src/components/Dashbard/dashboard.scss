@@ -1,5 +1,13 @@
 @import "../../var";
 .dashboard {
+  .row {
+    > div {
+      height: 450px;
+      > div {
+        border-radius: 15px;
+      }
+    }
+  }
   background-color: #f1f5f9;
   > .parent {
     //  .welcome {
@@ -30,7 +38,7 @@
         border-top: 1px solid #a1a1a1;
         border-bottom: 1px solid #a1a1a1;
       }
-      >a {
+      > a {
         background: var(--text-color);
         color: var(--main-color);
         padding: 5px 8px;
@@ -38,9 +46,69 @@
         display: block;
         width: fit-content;
         position: relative;
-        margin: 10px 10px 0px auto;
+        margin: 42px 10px 0px auto;
       }
     }
     // }
+  }
+  // 2
+  .quickDraftParent {
+    .quickDraft {
+      background-color: var(--main-color);
+      border-radius: 15px;
+      form {
+        input:first-child,
+        textarea {
+          background-color: #a1a1a1;
+          color: var(--main-color);
+          outline: none;
+          border-radius: 6px;
+          padding: 10px;
+          &::placeholder {
+            color: var(--main-color);
+          }
+        }
+        textarea {
+          height: 200px;
+        }
+        input:last-child {
+          align-self: flex-end;
+          padding: 5px 8px;
+          border-radius: 9px;
+          border: none;
+          background-color: var(--text-color);
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+  .tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+          @include media("medium") {
+        height: auto !important;
+      }
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      width: 100%;
+      @include media("medium") {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        height: auto;
+      }
+      flex: 1;
+      > div {
+        border: 1px solid #ccc;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 15px;
+      }
+    }
+    >p{
+      align-self: flex-start
+    }
   }
 }

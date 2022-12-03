@@ -1,0 +1,164 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --hover-color: #f6f6f6;
+  --shadow-color: #ddd;
+  --section-color: #f1f5f9;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  color: #fff;
+}
+*::selection {
+  color: #fff;
+}
+
+/* Start Color */
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.radius {
+  border-radius: 15px;
+}
+
+.targets {
+  background-color: var(--main-color);
+}
+.targets .TheIcon {
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+}
+.targets .TheIcon.firstIcon {
+  background-color: rgba(0, 117, 255, 0.2);
+}
+.targets .TheIcon.firstIcon > i {
+  color: #0075ff;
+}
+.targets .TheIcon.secondIcon {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+.targets .TheIcon.secondIcon > i {
+  color: #f59e0b;
+}
+.targets .TheIcon.thirdIcon {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.targets .TheIcon.thirdIcon > i {
+  color: #22c55e;
+}
+.targets .details {
+  flex: 1;
+  margin-left: 15px;
+}
+.targets .details > .progres {
+  height: 5px;
+}
+.targets .details > .progres > span {
+  padding: 3px 5px;
+  height: 5px;
+  position: absolute;
+  width: 0;
+  transition: width var(--main-transition);
+}
+.targets .details > .progres > span > span {
+  right: -29px;
+  position: absolute;
+  top: -43px;
+  padding: 2px 12px;
+  border-radius: 6px;
+}
+.targets .details > .progres > span > span::before {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -13px;
+  border-top-color: black;
+}
+.targets .details > .progres > span > span:first-child {
+  color: #fff;
+}
+.targets .details .progres1 {
+  background-color: rgba(0, 117, 255, 0.2);
+}
+.targets .details .progres1 > span {
+  transition-delay: 0s;
+}
+.targets .details .progres2 {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+.targets .details .progres2 > span {
+  transition-delay: 0.1s;
+}
+.targets .details .progres3 {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+.targets .details .progres3 > span {
+  transition-delay: 0.2s;
+}/*# sourceMappingURL=progress.css.map */
