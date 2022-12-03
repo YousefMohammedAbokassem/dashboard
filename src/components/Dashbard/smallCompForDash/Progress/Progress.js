@@ -13,11 +13,11 @@ export default function Progress({
   useEffect(() => {
     const targets = document.querySelector(".targets");
     const Spans = document.querySelectorAll(".details .progres > span ");
-    let status = true;
-    const childSpans = document.querySelectorAll(
-      ".details .progres > span >span "
-    );
-    let counte = 0;
+    // let status = true;
+    // const childSpans = document.querySelectorAll(
+    //   ".details .progres > span >span "
+    // );
+    // let counte = 0;
     window.addEventListener("scroll", function () {
       if (
         window.scrollY >=

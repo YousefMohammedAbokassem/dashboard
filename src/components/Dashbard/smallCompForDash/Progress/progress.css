@@ -93,6 +93,12 @@
   display: grid;
   place-items: center;
 }
+@media (max-width:767px) {
+  .targets .TheIcon {
+    width: 75px;
+    height: 75px;
+  }
+}
 .targets .TheIcon.firstIcon {
   background-color: rgba(0, 117, 255, 0.2);
 }

@@ -72,7 +72,7 @@ export default function Header() {
           <i className="fa-regular fa-bell fa-lg notification"></i>
         </span>
         <div className="accountImage">
-          <img src="/dashboard/images/me.png" alt="a" />
+          <img src="/dashboard/images/activity-02.png" alt="a" />
         </div>
       </div>
     </header>

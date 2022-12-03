@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Page from "./smallCompForDash/Page/Page";
 import Title from "./smallCompForDash/Title/Title";
 import "./dashboard.css";
 import Progress from "./smallCompForDash/Progress/Progress";
+import Tickets from "./smallCompForDash/tickets/Tickets";
 export default function Dashboard() {
+  useEffect(() => {
+  }, []);
   return (
-    <div className="dashboard p-4 container ">
+    <div
+      className="dashboard p-4 container wow animate__fadeIn"
+      data-wow-duration="1s"
+    >
       <Page page="Dashboard" />
       <div className="container row mt-5 parent px-0  ">
         {/* start column */}
@@ -22,7 +28,11 @@ export default function Dashboard() {
               />
             </div>
             {/* 2 */}
-            <img src="/dashboard/images/me.png" className="d-block " alt="" />
+            <img
+              src="/dashboard/images/activity-02.png"
+              className="d-block "
+              alt=""
+            />
             {/* 3 */}
             <div className="info d-flex justify-content-evenly align-items-center p-3 flex-md-row flex-column">
               <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my-2">
@@ -66,12 +76,10 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <div
-          className="col-xl-6 my-3 wow animate__slideInLeft"
-          data-wow-duration="2s"
-          data-wow-iteration="1"
-          // data-wow-delay=".5s"
+          className="col-xl-6 my-3 wow animate__fadeInLeft"
+          data-wow-duration="1s"
         >
-          <div className="targets  h-100 p-3 ">
+          <div className="targets d-md-block d-flex flex-column  h-100 p-3 ">
             <Title main="Yearly Targets" name="Targets Of The Year" />
             {/* 1 */}
             <Progress
@@ -110,36 +118,7 @@ export default function Dashboard() {
         </div>
         {/* end column */}
         {/* start column */}
-        <div className="col-xl-6 my-3">
-          <div className="tickets h-100 p-3">
-            <Title
-              main="Tickets Statistics"
-              name="Everything About Support Tickets"
-            />
-            <section className="">
-              <div className="text-center d-flex flex-column justify-content-center align-items-center">
-                <i className="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"></i>
-                <h3>2500</h3>
-                <span className="opacity-75">Total</span>
-              </div>
-              <div className="text-center d-flex flex-column justify-content-center align-items-center">
-                <i className="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
-                <h3>500</h3>
-                <span className="opacity-75">Pending</span>
-              </div>
-              <div className="text-center d-flex flex-column justify-content-center align-items-center">
-                <i className="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
-                <h3>1900</h3>
-                <span className="opacity-75">Closed</span>
-              </div>
-              <div className="text-center d-flex flex-column justify-content-center align-items-center">
-                <i className="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
-                <h3>100</h3>
-                <span className="opacity-75">Deleted</span>
-              </div>
-            </section>
-          </div>
-        </div>
+        <Tickets />
         {/* end column */}
       </div>
     </div>

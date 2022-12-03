@@ -6,6 +6,10 @@
     height: 90px;
     display: grid;
     place-items: center;
+    @include media("mobile") {
+      width: 75px;
+      height:75px;
+    }
     &.firstIcon {
       background-color: rgb(0 117 255 / 20%);
       > i {
