@@ -1,6 +1,10 @@
 @import "../../var";
 .Nav {
   width: 200px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 1000000;
   @include media("mobile") {
     width: 50px;
   }

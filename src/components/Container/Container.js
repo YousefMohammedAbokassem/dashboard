@@ -8,6 +8,7 @@ import "./css/all.min.css";
 import Header from "../Header/Header";
 import WOW from "wowjs";
 import Dashboard from "../Dashbard/Dashboard";
+import Go from "../GoUp/Go";
 
 export default function Container() {
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Container() {
             <Route path="/dashboard/" element={<Dashboard />} />
           </Routes>
         </div>
+        <Go />
       </div>
     </BrowserRouter>
   );

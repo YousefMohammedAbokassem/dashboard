@@ -2,6 +2,9 @@
 header {
   background-color: var(--main-color);
   box-shadow: 0px 1px 9px var(--shadow-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
   > .searchInput {
     > input {
       outline: none;

@@ -1,7 +1,9 @@
 @import "../../var";
+
 nav {
   box-shadow: 0 0 10px var(--shadow-color);
   background-color: var(--main-color);
+
   @include media("mobile") {
     padding: 10px;
   }

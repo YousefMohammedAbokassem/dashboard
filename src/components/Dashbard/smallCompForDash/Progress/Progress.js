@@ -66,7 +66,7 @@ export default function Progress({
           {/* opacity */}
           <span data-width={width} className={spans}>
             <span className={spans} data-width={width}>
-              {width}
+              {width}%
             </span>
           </span>
           {/* the value */}

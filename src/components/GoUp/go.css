@@ -84,25 +84,15 @@
   border-radius: 15px;
 }
 
-.Nav {
-  width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  z-index: 1000000;
+.go {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
 }
-@media (max-width:767px) {
-  .Nav {
-    width: 50px;
-  }
-}
-
-.cont {
-  width: calc(100% - 200px);
-}
-@media (max-width:767px) {
-  .cont {
-    width: calc(100% - 50px);
-  }
-}/*# sourceMappingURL=Container.css.map */
+.go .myButton {
+  color: #000;
+}/*# sourceMappingURL=go.css.map */

@@ -5,9 +5,9 @@ import Title from "./smallCompForDash/Title/Title";
 import "./dashboard.css";
 import Progress from "./smallCompForDash/Progress/Progress";
 import Tickets from "./smallCompForDash/tickets/Tickets";
+import News from "./smallCompForDash/News/News";
 export default function Dashboard() {
-  useEffect(() => {
-  }, []);
+  useEffect(() => {}, []);
   return (
     <div
       className="dashboard p-4 container wow animate__fadeIn"
@@ -16,7 +16,11 @@ export default function Dashboard() {
       <Page page="Dashboard" />
       <div className="container row mt-5 parent px-0  ">
         {/* start column */}
-        <div className="col-xl-6 my-3  ">
+        <div
+          className="col-xl-6 my-3 wow animate__slideInLeft"
+          data-wow-duration="0.5s"
+          data-wow-offset="200"
+        >
           <div className="container-fluid Container p-0 h-100 welcome">
             {/* 1 */}
             <div className="d-flex justify-content-between align-items-center p-3">
@@ -56,7 +60,11 @@ export default function Dashboard() {
         </div>
         {/* end column */}
         {/* start column */}
-        <div className="col-xl-6 quickDraftParent my-3 ">
+        <div
+          className="col-xl-6 quickDraftParent my-3 wow animate__slideInRight "
+          data-wow-duration="0.5s"
+          data-wow-offset="200"
+        >
           <div className="quickDraft p-3 h-100 ">
             <Title main="Quick Draft" name="Write A Draft For Your Ideas" />
             <form className="d-flex justify-content-center align-items-center flex-column">
@@ -76,8 +84,9 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <div
-          className="col-xl-6 my-3 wow animate__fadeInLeft"
-          data-wow-duration="1s"
+          className="col-xl-6 my-3 wow animate__slideInLeft"
+          data-wow-duration="0.5s"
+          data-wow-offset="200"
         >
           <div className="targets d-md-block d-flex flex-column  h-100 p-3 ">
             <Title main="Yearly Targets" name="Targets Of The Year" />
@@ -119,6 +128,9 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <Tickets />
+        {/* end column */}
+        {/* start column */}
+        <News />
         {/* end column */}
       </div>
     </div>

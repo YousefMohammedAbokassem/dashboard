@@ -92,6 +92,7 @@
 }
 .dashboard .row > div > div {
   border-radius: 15px;
+  background-color: var(--main-color);
 }
 .dashboard > .parent .Container {
   border-radius: 15px;
@@ -202,4 +203,22 @@
 }
 .dashboard .tickets > p {
   align-self: flex-start;
+}
+@media (max-width:767px) {
+  .dashboard .news > p > h4 {
+    text-align: center;
+  }
+}
+.dashboard .news > .newsPart:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.dashboard .news > .newsPart > .cont > img {
+  width: 100px;
+  border-radius: 6px;
+}
+.dashboard .news > .newsPart > span {
+  background-color: var(--text-color);
+  color: var(--main-color);
+  border-radius: 6px;
+  padding: 3px 5px;
 }/*# sourceMappingURL=dashboard.css.map */
