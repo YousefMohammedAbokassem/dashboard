@@ -119,6 +119,7 @@ body {
 
 .cont {
   width: calc(100% - 200px);
+  background: #e0e0e0;
 }
 @media (max-width:767px) {
   .cont {

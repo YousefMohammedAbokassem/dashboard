@@ -96,5 +96,5 @@
   opacity: 0;
 }
 .go .myButton {
-  color: #000;
+  color: var(--blue-color);
 }/*# sourceMappingURL=go.css.map */

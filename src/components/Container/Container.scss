@@ -25,6 +25,7 @@ body {
 
 .cont {
   width: calc(100% - 200px);
+  background: #e0e0e0;
   @include media("mobile") {
     width: calc(100% - 50px);
   }

@@ -8,6 +8,6 @@
   transition: 0.5s;
   opacity: 0;
   .myButton {
-    color: #000;
+    color: var(--blue-color);
   }
 }

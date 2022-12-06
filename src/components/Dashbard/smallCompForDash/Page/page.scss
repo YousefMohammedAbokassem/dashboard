@@ -1,7 +1,7 @@
-@import "../../var";
+@import "../../../../var";
 .page {
   position: relative;
-  color: var(--text-color);
+  color: #111;
   &::before,
   &::after {
     content: "";

@@ -86,9 +86,6 @@
   border-radius: 15px;
 }
 
-.dashboard {
-  background-color: #f1f5f9;
-}
 .dashboard .row > div {
   height: 450px;
 }

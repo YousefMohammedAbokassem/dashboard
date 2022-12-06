@@ -4,7 +4,11 @@ import FooterChild from "./FooterChild";
 
 export default function Footer() {
   return (
-    <footer className="p-3">
+    <footer
+      className="p-3 wow animate__fadeInUpBig"
+      data-wow-duration="1s"
+    //   data-wow-offset="200"
+    >
       <div>
         <Title main="Projects" />
         <table className="w-100">
