@@ -6,18 +6,25 @@ import "./dashboard.css";
 import Progress from "./smallCompForDash/Progress/Progress";
 import Tickets from "./smallCompForDash/tickets/Tickets";
 import News from "./smallCompForDash/News/News";
+import Tasks from "./smallCompForDash/Tasks/Tasks";
+import Search from "./smallCompForDash/Search/Search";
+import Upload from "./smallCompForDash/Upload/Upload";
+import Project from "./smallCompForDash/Project/Project";
+import Reminders from "./smallCompForDash/Reminders/Reminders";
+import Post from "./smallCompForDash/Post/Post";
+import Social from "./smallCompForDash/Social/Social";
 export default function Dashboard() {
   useEffect(() => {}, []);
   return (
     <div
-      className="dashboard p-4 container wow animate__fadeIn"
-      data-wow-duration="1s"
+      className="dashboard p-4 container-fluid wow animate__fadeIn"
+      data-wow-duration="4s"
     >
       <Page page="Dashboard" />
-      <div className="container row mt-5 parent px-0  ">
+      <div className="container-fluid row mt-5 parent px-0  ">
         {/* start column */}
         <div
-          className="col-xl-6 my-3 wow animate__slideInLeft"
+          className="col-xl-6 col-xxl-4  col-xxl-4 my-3 wow animate__slideInLeft"
           data-wow-duration="0.5s"
           data-wow-offset="200"
         >
@@ -61,7 +68,7 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <div
-          className="col-xl-6 quickDraftParent my-3 wow animate__slideInRight "
+          className="col-xl-6 col-xxl-4  quickDraftParent my-3 wow animate__slideInRight "
           data-wow-duration="0.5s"
           data-wow-offset="200"
         >
@@ -84,7 +91,7 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <div
-          className="col-xl-6 my-3 wow animate__slideInLeft"
+          className="col-xl-6 col-xxl-4  my-3 wow animate__slideInLeft"
           data-wow-duration="0.5s"
           data-wow-offset="200"
         >
@@ -131,6 +138,27 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <News />
+        {/* end column */}
+        {/* start column */}
+        <Tasks />
+        {/* end column */}
+        {/* start column */}
+        <Search />
+        {/* end column */}
+        {/* start column */}
+        <Upload />
+        {/* end column */}
+        {/* start column */}
+        <Project />
+        {/* end column */}
+        {/* start column */}
+        <Reminders />
+        {/* end column */}
+        {/* start column */}
+        <Post />
+        {/* end column */}
+        {/* start column */}
+        <Social />
         {/* end column */}
       </div>
     </div>

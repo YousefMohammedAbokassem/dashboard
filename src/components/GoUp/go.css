@@ -21,10 +21,12 @@
   color: var(--text-color);
 }
 *::-moz-selection {
-  color: #fff;
+  background-color: var(--text-color);
+  color: var(--main-color);
 }
 *::selection {
-  color: #fff;
+  background-color: var(--text-color);
+  color: var(--main-color);
 }
 
 /* Start Color */

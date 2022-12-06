@@ -5,7 +5,7 @@ import NewPart from "./NewPart";
 export default function News() {
   return (
     <div
-      className="col-xl-6 my-3 h-auto wow animate__slideInLeft "
+      className="col-xl-6 col-xxl-4  my-3 h-auto wow animate__slideInLeft "
       data-wow-duration="0.5s"
       data-wow-offset="200"
     >

@@ -38,18 +38,14 @@ export default function Header() {
     const themeSpan = document.querySelector(".themeSpan");
     if (sessionToggle !== null) {
       if (sessionToggle === "true") {
+        toggle = false;
         themeSpan.style.cssText = "transform: translateX(0rem);";
         document.documentElement.style.setProperty("--main-color", "#000");
         document.documentElement.style.setProperty("--text-color", "#fff");
         document.documentElement.style.setProperty("--hover-color", "#b5b5b5");
         document.documentElement.style.setProperty("--shadow-color", "#000");
-      } else {
-        themeSpan.style.cssText = "transform: translateX(2.5rem);";
-        document.documentElement.style.setProperty("--main-color", "#fff");
-        document.documentElement.style.setProperty("--text-color", "#000");
-        document.documentElement.style.setProperty("--hover-color", "#f6f6f6");
-        document.documentElement.style.setProperty("--shadow-color", "#ddd");
-      }
+      } 
+      // if not the default theme is already exist
     }
   }, []);
   return (

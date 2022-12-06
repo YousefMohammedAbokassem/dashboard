@@ -14,6 +14,7 @@ export default function Container() {
   useEffect(() => {
     new WOW.WOW({
       live: false,
+      // mobile: false,
     }).init();
   }, []);
   return (

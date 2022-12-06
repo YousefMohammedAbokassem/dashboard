@@ -63,6 +63,7 @@ export default function Progress({
         <h5 className="my-2">{number}</h5>
         {/* bold */}
         <div className={progress}>
+          .div
           {/* opacity */}
           <span data-width={width} className={spans}>
             <span className={spans} data-width={width}>
