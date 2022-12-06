@@ -13,6 +13,7 @@ import Project from "./smallCompForDash/Project/Project";
 import Reminders from "./smallCompForDash/Reminders/Reminders";
 import Post from "./smallCompForDash/Post/Post";
 import Social from "./smallCompForDash/Social/Social";
+import Footer from "./smallCompForDash/Footer/Footer";
 export default function Dashboard() {
   useEffect(() => {}, []);
   return (
@@ -161,6 +162,7 @@ export default function Dashboard() {
         <Social />
         {/* end column */}
       </div>
+      <Footer />
     </div>
   );
 }

@@ -86,6 +86,23 @@
   border-radius: 15px;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+  border-radius: 45px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .Nav {
   width: 200px;
   position: -webkit-sticky;

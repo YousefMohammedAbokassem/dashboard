@@ -375,11 +375,11 @@
   font-weight: 700;
 }
 .dashboard .social .socialChild > button {
-  background-color: #0077ff;
   border: none;
   margin-right: 10px;
   padding: 3px 5px;
   border-radius: 12px;
+  width: 100px;
   color: white;
 }
 .dashboard .social .socialChild:nth-child(2) {
@@ -433,6 +433,30 @@
 }
 .dashboard .social .socialChild:last-child > button {
   background-color: #0077b5;
+}
+.dashboard > footer {
+  background-color: var(--main-color);
+  overflow-x: auto;
+  border-radius: 15px;
+}
+.dashboard > footer table {
+  min-width: 1000px;
+}
+.dashboard > footer table > thead > tr > th {
+  padding: 20px 15px;
+  color: #111;
+}
+.dashboard > footer table > tbody > tr > td {
+  padding: 20px 15px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.dashboard > footer table > tbody > tr > td > span {
+  border-radius: 6px;
+}
+.dashboard > footer table > tbody > tr > td.image img {
+  width: 30px;
 }
 
 @keyframes change-color {
