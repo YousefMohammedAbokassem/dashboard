@@ -9,6 +9,8 @@ import Header from "../Header/Header";
 import WOW from "wowjs";
 import Dashboard from "../Dashbard/Dashboard";
 import Go from "../GoUp/Go";
+import Settings from "../Settings/Settings";
+import Hello from "../Hello/Hello";
 
 export default function Container() {
   useEffect(() => {
@@ -20,6 +22,7 @@ export default function Container() {
   return (
     <BrowserRouter>
       <div className="d-flex justify-content-center ">
+        <Hello />
         <div className="nav Nav">
           <Nav />
         </div>
@@ -28,6 +31,7 @@ export default function Container() {
           {/* <FontAwesomeIcon icon="fa-brands fa-facebook" /> */}
           <Routes>
             <Route path="/dashboard/" element={<Dashboard />} />
+            <Route path="/setting/" element={<Settings />} />
           </Routes>
         </div>
         <Go />

@@ -211,6 +211,9 @@
 .dashboard .news > .newsPart:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
+.dashboard .news > .newsPart > .cont {
+  background-color: transparent;
+}
 .dashboard .news > .newsPart > .cont > img {
   width: 100px;
   border-radius: 6px;

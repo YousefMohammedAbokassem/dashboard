@@ -105,9 +105,23 @@ header > .searchInput > input {
   background-color: var(--main-color);
   text-transform: capitalize;
 }
+@media (max-width:575px) {
+  header > .searchInput > input {
+    width: 0px;
+  }
+  header > .searchInput > input:focus {
+    width: 20px;
+    padding-left: 30px;
+  }
+}
 header > .searchInput > input:focus {
   width: 200px;
   padding-left: 30px;
+}
+@media (max-width:575px) {
+  header > .searchInput > input:focus {
+    width: 50px;
+  }
 }
 header > .searchInput > input::-moz-placeholder {
   color: var(--text-color);

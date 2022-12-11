@@ -1,0 +1,228 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --hover-color: #f6f6f6;
+  --shadow-color: #ddd;
+  --section-color: #f1f5f9;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+*::selection {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+/* Start Color */
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.radius {
+  border-radius: 15px;
+}
+
+.settings {
+  /* */
+}
+.settings > .row > div {
+  margin: 1rem 0px;
+}
+.settings > .row > div > div {
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+.settings > .row .control h6 {
+  font-size: 15px;
+}
+.settings > .row .control > .status h2 {
+  font-size: 17px;
+  font-weight: normal !important;
+}
+.settings > .row .control > textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  color: #929292;
+}
+.settings > .row .info {
+  background-color: var(--main-color);
+}
+.settings > .row .info > form > .box:not(:first-child) {
+  margin-top: 5px;
+}
+.settings > .row .info > form > .box input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+.settings > .row .info > form > .box:last-child > div:last-child input:first-child {
+  width: 85% !important;
+}
+@media (max-width:991px) {
+  .settings > .row .info > form > .box:last-child > div:last-child input:first-child {
+    width: 100% !important;
+  }
+}
+.settings > .row .info > form > .box:last-child > div:last-child input:last-child {
+  background-color: var(--text-color);
+  flex: 1;
+  color: var(--main-color);
+}
+.settings > .row .security > .secureInfo > .box:not(:last-child) {
+  padding: 10px 0px !important;
+  border-bottom: 1px solid #ccc;
+}
+.settings > .row .security > .secureInfo a {
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.settings > .row .social .box {
+  height: 50px;
+}
+.settings > .row .social .box:not(:last-child) {
+  margin-bottom: 10px;
+}
+.settings > .row .social .box .icon {
+  border-radius: 6px 0 0 6px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  flex: 1 1;
+  max-height: 100%;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+}
+.settings > .row .social .box .icon i {
+  color: #888;
+}
+.settings > .row .social .box > input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 90%;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+  color: black;
+}
+@media (max-width:767px) {
+  .settings > .row .social .box > input {
+    width: 75%;
+  }
+}
+.settings .widget > ul li {
+  cursor: pointer;
+  position: relative;
+}
+.settings .widget > ul li > input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.settings .widget > ul li > input:checked + .checkDiv::before {
+  transform: scale(1) rotate(0deg);
+}
+.settings .widget > ul li > input:checked + .checkDiv::after {
+  border-color: transparent;
+}
+.settings .widget > ul li > .checkDiv {
+  position: relative;
+}
+.settings .widget > ul li > .checkDiv::before, .settings .widget > ul li > .checkDiv::after {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 4px;
+  top: 3px;
+  left: -36px;
+}
+.settings .widget > ul li > .checkDiv::before {
+  content: "\f00c";
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: var(--blue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s;
+  transform: scale(0) rotate(180deg);
+}
+.settings .widget > ul li > .checkDiv::after {
+  content: "";
+  border: 2px solid #888;
+}/*# sourceMappingURL=settings.css.map */

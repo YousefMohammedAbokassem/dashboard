@@ -16,10 +16,19 @@ header {
       transition: padding, width, 0.3s;
       background-color: var(--main-color);
       text-transform: capitalize;
-
+      @include media("verySmall") {
+        width: 0px;
+        &:focus {
+          width: 20px;
+          padding-left: 30px;
+        }
+      }
       &:focus {
         width: 200px;
         padding-left: 30px;
+        @include media("verySmall") {
+          width: 50px;
+        }
       }
       &::placeholder {
         color: var(--text-color);

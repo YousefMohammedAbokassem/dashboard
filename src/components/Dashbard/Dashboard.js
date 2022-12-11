@@ -32,7 +32,7 @@ export default function Dashboard() {
           <div className="container-fluid Container p-0 h-100 welcome">
             {/* 1 */}
             <div className="d-flex justify-content-between align-items-center p-3">
-              <Title main="WELCOME" name="AYA" />
+              <Title main="WELCOME" name="YOUSEF" />
               <img
                 className="d-md-block d-none"
                 src="/dashboard/images/welcome.png"
@@ -48,8 +48,8 @@ export default function Dashboard() {
             {/* 3 */}
             <div className="info d-flex justify-content-evenly align-items-center p-3 flex-md-row flex-column">
               <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my-2">
-                <span className="text-capitalize">Aya Alahmmar</span>
-                <span className="text-capitalize opacity-75">Designer</span>
+                <span className="text-capitalize">Yousef Abo kassem</span>
+                <span className="text-capitalize opacity-75">Front end developer</span>
               </div>
               <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my-2">
                 <span className="text-capitalize">80</span>
@@ -83,7 +83,7 @@ export default function Dashboard() {
               />
               <textarea
                 className="w-100 my-3 border-0"
-                placeholder="Your Though"
+                placeholder="Your Thought"
               ></textarea>
               <input type="submit" value="save" />
             </form>

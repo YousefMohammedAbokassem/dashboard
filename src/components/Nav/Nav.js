@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import "./Nav.css";
 import { Link, NavLink } from "react-router-dom";
+import Change from "../Change/Change";
 export default function Nav() {
   return (
     <nav className=" h-100 position-relative p-md-4 w-100">
       <div className="my-4 ">
         <h2 className="d-flex justify-content-center align-items-center fw-bold ">
-          AYA
+          YOUSEF
         </h2>
         <hr className="w-75 mx-auto mt-3 opacity-100  d-none d-md-block "></hr>
       </div>
@@ -83,6 +84,7 @@ export default function Nav() {
           plans
         </span>
       </NavLink>
+      <Change classAll="LightNight position-relative d-sm-none mt-5 flex-column justify-content-evenly d-flex" />
     </nav>
   );
 }

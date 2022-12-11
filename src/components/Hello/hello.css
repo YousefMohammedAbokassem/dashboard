@@ -1,0 +1,132 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+  --hover-color: #f6f6f6;
+  --shadow-color: #ddd;
+  --section-color: #f1f5f9;
+  --SpText-color: #eb5424;
+  --main-transition: 0.5s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+*::-moz-selection {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+*::selection {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+/* Start Color */
+.c-black {
+  color: black;
+}
+
+.c-white {
+  color: white;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-orange {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.radius {
+  border-radius: 15px;
+}
+
+.hello {
+  background: black;
+  z-index: 100000000;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  transition: 1s;
+  -webkit-animation: hello 3s 0.5s both;
+          animation: hello 3s 0.5s both;
+}
+@media (max-width:575px) {
+  .hello {
+    width: 800px !important;
+  }
+}
+
+@keyframes hello {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(3deg);
+  }
+}
+@-webkit-keyframes hello {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(3deg);
+  }
+}/*# sourceMappingURL=hello.css.map */
