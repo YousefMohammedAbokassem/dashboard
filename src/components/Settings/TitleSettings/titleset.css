@@ -86,6 +86,10 @@
   border-radius: 15px;
 }
 
+.radius-6 {
+  border-radius: 6px;
+}
+
 .h6Sett {
   color: var(--grey-color);
 }/*# sourceMappingURL=titleset.css.map */

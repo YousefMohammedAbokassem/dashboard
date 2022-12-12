@@ -86,6 +86,10 @@
   border-radius: 15px;
 }
 
+.radius-6 {
+  border-radius: 6px;
+}
+
 .check-toggle {
   -webkit-appearance: none;
      -moz-appearance: none;

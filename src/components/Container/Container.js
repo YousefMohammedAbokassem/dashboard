@@ -11,6 +11,7 @@ import Dashboard from "../Dashbard/Dashboard";
 import Go from "../GoUp/Go";
 import Settings from "../Settings/Settings";
 import Hello from "../Hello/Hello";
+import Profile from "../Profile/Profile";
 
 export default function Container() {
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function Container() {
           <Routes>
             <Route path="/dashboard/" element={<Dashboard />} />
             <Route path="/setting/" element={<Settings />} />
+            <Route path="/profile/" element={<Profile />} />
           </Routes>
         </div>
         <Go />
