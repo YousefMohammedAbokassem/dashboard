@@ -11,7 +11,7 @@ export default function Info({
   thirdName,
 }) {
   return (
-    <div className="fs-5 info  flex-grow-1 px-3 text-md-start text-center">
+    <div className="fs-5 info  flex-grow-1 px-3 text-lg-start text-center">
       <div className="fs-5 title opacity-75">{Title}</div>
       <div className="fs-5 firstInfo">
         <span className="fs-5 opacity-75 text-capitalize">{First}</span>
@@ -25,7 +25,7 @@ export default function Info({
         <span className="fs-5 opacity-75 text-capitalize">{third}</span>
         <span className="fs-5text-capitalize ms-2">{thirdName}</span>
       </div>
-      <div className="tog text-md-end text-center">
+      <div className="tog text-lg-end text-center">
         <Toggle />
       </div>
     </div>

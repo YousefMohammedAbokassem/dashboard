@@ -8,7 +8,7 @@ export default function SmallProfile() {
       data-wow-duration="0.5s"
       data-wow-offset="200"
     >
-      <div className="smallProfile radius px-3 py-4 h-100 d-flex flex-md-row flex-column">
+      <div className="smallProfile radius px-3 py-4 h-100 d-flex flex-lg-row flex-column">
         <div className="image">
           <img src="/dashboard/images/activity-02.png" alt="" />
           <h5>Yousef Abo Kassem</h5>

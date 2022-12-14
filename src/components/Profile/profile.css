@@ -108,7 +108,7 @@
   height: 120px;
   border-radius: 50%;
 }
-@media (max-width:767px) {
+@media (max-width:991px) {
   .profile .smallProfile > .image {
     width: 100%;
     border-right: none;
@@ -150,14 +150,11 @@
 .profile .skills .skill .skillSpan {
   margin: 5px;
 }
+.profile .activities .types:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
 .profile .activities .types .imageAndInfo > img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-}
-.profile .activities .types .imageAndInfo .info > p {
-  background-color: red;
-}
-.profile .activities .types .date > span {
-  background-color: blueviolet;
 }/*# sourceMappingURL=profile.css.map */

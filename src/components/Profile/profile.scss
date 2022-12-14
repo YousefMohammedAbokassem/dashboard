@@ -20,7 +20,7 @@
       img {
         @include circle(120px);
       }
-      @include media("mobile") {
+      @include media("small") {
         width: 100%;
         border-right: none;
         img {
@@ -77,6 +77,9 @@
   }
   .activities {
     .types {
+      &:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+      }
       .imageAndInfo {
         > img {
           @include circle(64px);
@@ -85,14 +88,12 @@
           > span {
           }
           > p {
-            background-color: red;
           }
         }
       }
       //
       .date {
         > span {
-          background-color: blueviolet;
         }
       }
     }
