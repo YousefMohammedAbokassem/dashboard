@@ -15,7 +15,9 @@ import Post from "./smallCompForDash/Post/Post";
 import Social from "./smallCompForDash/Social/Social";
 import Footer from "./smallCompForDash/Footer/Footer";
 export default function Dashboard() {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    document.body.title = "Dashboard";
+  }, []);
   return (
     <div
       className="dashboard p-4 container-fluid wow animate__fadeIn"
@@ -49,7 +51,9 @@ export default function Dashboard() {
             <div className="info d-flex justify-content-evenly align-items-center p-3 flex-md-row flex-column">
               <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my-2">
                 <span className="text-capitalize">Yousef Abo kassem</span>
-                <span className="text-capitalize opacity-75">Front end developer</span>
+                <span className="text-capitalize opacity-75">
+                  Front end developer
+                </span>
               </div>
               <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my-2">
                 <span className="text-capitalize">80</span>

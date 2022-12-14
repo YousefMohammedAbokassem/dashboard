@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
 import "./settings.css";
 import Control from "./SmallCompOfSettings/control/Control";
@@ -7,6 +8,9 @@ import Security from "./SmallCompOfSettings/Security ";
 import Social from "./SmallCompOfSettings/Social";
 import Widgets from "./SmallCompOfSettings/wedgets/Widgets";
 export default function Settings() {
+  useEffect(() => {
+    document.body.title = "Settings";
+  }, []);
   return (
     <div
       className="settings container-fluid p-md-4 p-1 wow animate__fadeIn"
