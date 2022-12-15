@@ -14,11 +14,11 @@ export default function Tickets() {
         if (status === true) {
           TheNumbers.forEach((span) => {
             let goal = span.dataset.point;
-            console.log(goal);
+            // console.log(goal);
             span.innerHTML = 0;
             let counter = this.setInterval(() => {
               span.textContent++;
-              console.log(span.textContent);
+              // console.log(span.textContent);
               if (span.textContent == goal) {
                 this.clearInterval(counter);
               }
@@ -27,7 +27,7 @@ export default function Tickets() {
           status = !status;
         }
       } else {
-        console.log("object");
+        // console.log("object");
       }
     });
   }, []);

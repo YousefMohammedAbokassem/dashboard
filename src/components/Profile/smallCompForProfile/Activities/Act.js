@@ -7,7 +7,7 @@ export default function act({ type, para, date1, date2 ,imageSrc}) {
         <img src={imageSrc} alt="" />
         <div className="info ms-lg-2 ms-0 my-lg-3 my-3 d-flex flex-column align-items-center align-items-lg-start align-items-center">
           <span>{type}</span>
-          <p className="opacity-75 m-0 mt-lg-1 mt-1">{para}</p>
+          <p className="opacity-75 m-0 mt-lg-1 mt-1 text-sm-start text-center">{para}</p>
         </div>
       </div>
       <div className="date d-flex flex-column align-items-center">

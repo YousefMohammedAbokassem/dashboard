@@ -1,0 +1,29 @@
+.courses > .row > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 25px;
+}
+@media (max-width: 567px) {
+  .courses > .row > .container {
+    grid-template-columns: 1fr;
+  }
+}
+.courses > .row > .container .card {
+  background-color: var(--main-color);
+}
+.courses > .row > .container .card > img {
+  max-width: 100%;
+}
+.courses > .row > .container .card > .card-body > p {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.courses > .row > .container .card .footCard .courseInfo {
+  background-color: var(--blue-color);
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  position: relative;
+  bottom: 47px;
+}/*# sourceMappingURL=coursera.css.map */

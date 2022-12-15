@@ -16,7 +16,8 @@ import Social from "./smallCompForDash/Social/Social";
 import Footer from "./smallCompForDash/Footer/Footer";
 export default function Dashboard() {
   useEffect(() => {
-    document.body.title = "Dashboard";
+    let title = document.getElementById("titlePage");
+    title.innerHTML = "Dashboard";
   }, []);
   return (
     <div
@@ -49,7 +50,7 @@ export default function Dashboard() {
             />
             {/* 3 */}
             <div className="info d-flex justify-content-evenly align-items-center p-3 flex-md-row flex-column">
-              <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my-2">
+              <div className="d-flex flex-column justify-content-center align-items-center m-md-0 my- text-center text-md-start">
                 <span className="text-capitalize">Yousef Abo kassem</span>
                 <span className="text-capitalize opacity-75">
                   Front end developer
@@ -137,34 +138,15 @@ export default function Dashboard() {
             />
           </div>
         </div>
-        {/* end column */}
-        {/* start column */}
         <Tickets />
-        {/* end column */}
-        {/* start column */}
         <News />
-        {/* end column */}
-        {/* start column */}
         <Tasks />
-        {/* end column */}
-        {/* start column */}
         <Search />
-        {/* end column */}
-        {/* start column */}
         <Upload />
-        {/* end column */}
-        {/* start column */}
         <Project />
-        {/* end column */}
-        {/* start column */}
         <Reminders />
-        {/* end column */}
-        {/* start column */}
         <Post />
-        {/* end column */}
-        {/* start column */}
         <Social />
-        {/* end column */}
       </div>
       <Footer />
     </div>

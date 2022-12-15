@@ -12,6 +12,8 @@ import Go from "../GoUp/Go";
 import Settings from "../Settings/Settings";
 import Hello from "../Hello/Hello";
 import Profile from "../Profile/Profile";
+import Projects from "../Projects/Projects";
+import Coursera from "../Coursera/Coursera";
 
 export default function Container() {
   useEffect(() => {
@@ -34,6 +36,8 @@ export default function Container() {
             <Route path="/dashboard/" element={<Dashboard />} />
             <Route path="/setting/" element={<Settings />} />
             <Route path="/profile/" element={<Profile />} />
+            <Route path="/projects/" element={<Projects />} />
+            <Route path="/courses/" element={<Coursera />} />
           </Routes>
         </div>
         <Go />

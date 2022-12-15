@@ -9,7 +9,8 @@ import Social from "./SmallCompOfSettings/Social";
 import Widgets from "./SmallCompOfSettings/wedgets/Widgets";
 export default function Settings() {
   useEffect(() => {
-    document.body.title = "Settings";
+       let title = document.getElementById("titlePage");
+       title.innerHTML = "Settings";
   }, []);
   return (
     <div
@@ -17,7 +18,7 @@ export default function Settings() {
       data-wow-duration="4s"
     >
       <Page page="Settings" />
-      <div className="row p-3  mt-5">
+      <div className="row p-md-3 p-1  mt-5">
         <Control />
         <Info />
         <Security />
