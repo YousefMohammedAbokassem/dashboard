@@ -3,6 +3,14 @@ import "./Nav.css";
 import { Link, NavLink } from "react-router-dom";
 import Change from "../Change/Change";
 export default function Nav() {
+  useEffect(() => {}, []);
+  const goUp = () => {
+    console.log("w");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <nav className=" h-100 position-relative p-md-4 w-100">
       <div className="my-4 ">
@@ -13,8 +21,8 @@ export default function Nav() {
       </div>
       <NavLink
         to="/dashboard/"
-        className="d-flex p-2 my-2 fw-bold ms-0 ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
-        id="activeLink"
+        className="d-flex  p-2 my-2 fw-bold ms-0 ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-regular fa-chart-bar fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block  ">
@@ -24,6 +32,7 @@ export default function Nav() {
       <NavLink
         to="/setting/"
         className="d-flex p-2 my-2  fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-solid fa-gear fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">
@@ -33,6 +42,7 @@ export default function Nav() {
       <NavLink
         to="/profile/"
         className="d-flex p-2 my-2   fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none "
+        onClick={goUp}
       >
         <i className="fa-regular fa-user fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">
@@ -42,6 +52,7 @@ export default function Nav() {
       <NavLink
         to="/projects/"
         className="d-flex p-2 my-2   fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-solid fa-diagram-project fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">
@@ -51,6 +62,7 @@ export default function Nav() {
       <NavLink
         to="/courses/"
         className="d-flex p-2 my-2   fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-solid fa-graduation-cap fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">
@@ -60,6 +72,7 @@ export default function Nav() {
       <NavLink
         to="/friends/"
         className="d-flex p-2 my-2   fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-regular fa-circle-user fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">
@@ -69,6 +82,7 @@ export default function Nav() {
       <NavLink
         to="/files/"
         className="d-flex p-2 my-2   fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-regular fa-file fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">
@@ -78,6 +92,7 @@ export default function Nav() {
       <NavLink
         to="/plans/"
         className="d-flex p-2 my-2   fw-bold ms-0  ms-md-1 justify-content-around w-100 align-items-center text-decoration-none"
+        onClick={goUp}
       >
         <i className="fa-regular fa-credit-card fa-fw"></i>
         <span className="text-capitalize flex-grow-1 ms-3 d-none d-md-block ">

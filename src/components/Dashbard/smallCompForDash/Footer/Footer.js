@@ -7,15 +7,19 @@ export default function Footer() {
     <footer
       className="p-3 wow animate__fadeInUpBig"
       data-wow-duration="1s"
-    //   data-wow-offset="200"
+      //   data-wow-offset="200"
     >
       <div>
         <Title main="Projects" />
         <table className="w-100">
           <thead className="bg-eee c-black">
             <tr>
-              <th>Name</th> <th>Finish Date</th> <th>Client</th> <th>Price</th>
-              <th>Team</th> <th>Status</th>
+              <th>Name</th>
+              <th>Finish Date</th>
+              <th>Client</th>
+              <th>Price</th>
+              <th>Team</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>

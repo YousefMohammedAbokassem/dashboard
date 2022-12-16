@@ -13,7 +13,7 @@ export default function Info() {
           name="General Information About Your Account"
         />
 
-        <form action="" className="information's d-flex flex-column">
+        <form  className="information's d-flex flex-column">
           <div className="box">
             <div className="opacity-75">First Name</div>
             <input type="text" placeholder="First Name" />

@@ -74,7 +74,7 @@ export default function Dashboard() {
         {/* end column */}
         {/* start column */}
         <div
-          className="col-xl-6 col-xxl-4  quickDraftParent my-3 wow animate__slideInRight "
+          className="col-xl-6 col-xxl-4  quickDraftParent my-3 wow animate__slideInRight"
           data-wow-duration="0.5s"
           data-wow-offset="200"
         >

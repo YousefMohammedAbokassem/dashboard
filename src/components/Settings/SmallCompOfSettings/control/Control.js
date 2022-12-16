@@ -1,5 +1,5 @@
-import React from 'react'
-import Toggle from '../../../Toggle/Toggle';
+import React from "react";
+import Toggle from "../../../Toggle/Toggle";
 import TitleSettings from "../../TitleSettings/TitleSettings";
 
 export default function Control() {

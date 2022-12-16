@@ -9,8 +9,8 @@ import Social from "./SmallCompOfSettings/Social";
 import Widgets from "./SmallCompOfSettings/wedgets/Widgets";
 export default function Settings() {
   useEffect(() => {
-       let title = document.getElementById("titlePage");
-       title.innerHTML = "Settings";
+    let title = document.getElementById("titlePage");
+    title.innerHTML = "Settings";
   }, []);
   return (
     <div
