@@ -15,7 +15,7 @@ export default function Files() {
       data-wow-duration="4s"
     >
       <Page page="Files" />
-      <div className="row p-1 p-md-3  mt-5">
+      <div className="row flex-row-reverse p-1 p-md-3  mt-5">
         <Statistics />
         <Boxes />
       </div>
