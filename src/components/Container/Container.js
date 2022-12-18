@@ -15,6 +15,7 @@ import Profile from "../Profile/Profile";
 import Projects from "../Projects/Projects";
 import Coursera from "../Coursera/Coursera";
 import Friends from "../Friends/Friends";
+import Files from "../Files/Files";
 
 export default function Container() {
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function Container() {
             <Route path="/projects/" element={<Projects />} />
             <Route path="/courses/" element={<Coursera />} />
             <Route path="/friends/" element={<Friends />} />
+            <Route path="/files/" element={<Files />} />
           </Routes>
         </div>
         <Go />

@@ -1,0 +1,79 @@
+@import "../../var";
+.files {
+  .row {
+    > div {
+      > .statistics {
+        background-color: var(--main-color);
+        position: sticky !important;
+        top: 90px;
+
+        > h2 {
+        }
+        > .statistic {
+          border: 1px solid #eee;
+          > .fileType {
+            > i {
+              width: 40px;
+              height: 40px;
+              display: flex;
+              display: grid;
+              place-items: center;
+              opacity: 0.8;
+            }
+            > .type {
+              > span {
+              }
+            }
+          }
+        }
+
+        .upl {
+          background-color: var(--blue-color);
+          transition: 0.3s;
+          > i {
+            font-size: 13px;
+          }
+          &:hover {
+            background-color: var(--blue-alt-color);
+          }
+          &:hover > i {
+            animation: goUpDown infinite linear alternate-reverse 0.8s;
+          }
+        }
+      }
+      .boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        .box {
+          height: 200px;
+          background-color: var(--main-color);
+          i {
+          }
+          .imageAndText {
+            > img {
+              width: 64px;
+              height: 64px;
+              transition: 0.3s;
+            }
+          }
+          > footer {
+            border-top: 1px solid #eee;
+            > span {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include keyF(goUpDown) {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
