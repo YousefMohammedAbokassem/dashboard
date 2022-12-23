@@ -14,6 +14,7 @@ import Reminders from "./smallCompForDash/Reminders/Reminders";
 import Post from "./smallCompForDash/Post/Post";
 import Social from "./smallCompForDash/Social/Social";
 import Footer from "./smallCompForDash/Footer/Footer";
+import {goUp} from "../Nav/Nav"
 export default function Dashboard() {
   useEffect(() => {
     let title = document.getElementById("titlePage");
@@ -66,7 +67,7 @@ export default function Dashboard() {
               </div>
             </div>
             {/* 4 */}
-            <Link to="/profile/" className="text-decoration-none">
+            <Link to="/profile/" className="text-decoration-none" onClick={goUp}>
               Profile
             </Link>
           </div>
