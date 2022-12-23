@@ -8,7 +8,7 @@ header {
   > .searchInput {
     > input {
       outline: none;
-      width: 160px;
+      width: 180px;
       border: 1px solid #ccc;
       border-radius: 10px;
       font-size: 14px;
@@ -17,17 +17,13 @@ header {
       background-color: var(--main-color);
       text-transform: capitalize;
       @include media("verySmall") {
-        width: 0px;
-        &:focus {
-          width: 20px;
-          padding-left: 30px;
-        }
+        width: 150px;
       }
       &:focus {
         width: 200px;
         padding-left: 30px;
         @include media("verySmall") {
-          width: 50px;
+          width: 170px;
         }
       }
       &::placeholder {

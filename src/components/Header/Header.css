@@ -120,7 +120,7 @@ header {
 }
 header > .searchInput > input {
   outline: none;
-  width: 160px;
+  width: 180px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 14px;
@@ -131,11 +131,7 @@ header > .searchInput > input {
 }
 @media (max-width:575px) {
   header > .searchInput > input {
-    width: 0px;
-  }
-  header > .searchInput > input:focus {
-    width: 20px;
-    padding-left: 30px;
+    width: 150px;
   }
 }
 header > .searchInput > input:focus {
@@ -144,7 +140,7 @@ header > .searchInput > input:focus {
 }
 @media (max-width:575px) {
   header > .searchInput > input:focus {
-    width: 50px;
+    width: 170px;
   }
 }
 header > .searchInput > input::-moz-placeholder {
