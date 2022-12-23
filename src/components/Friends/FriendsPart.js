@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import {goUp} from "../Nav/Nav";
 export default function FriendsPart({
   h4,
   p,
@@ -57,6 +57,7 @@ export default function FriendsPart({
             <Link
               className="bg-blue mx-1 h-100 text-white  radius-6"
               to="/profile/"
+              onClick={goUp}
             >
               Profile
             </Link>

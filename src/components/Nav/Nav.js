@@ -2,15 +2,14 @@ import React, { useEffect } from "react";
 import "./Nav.css";
 import { Link, NavLink } from "react-router-dom";
 import Change from "../Change/Change";
+export const goUp = () => {
+  console.log("w");
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 export default function Nav() {
-  useEffect(() => {}, []);
-  const goUp = () => {
-    console.log("w");
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
     <nav className=" h-100 position-relative p-md-4 w-100">
       <div className="my-4 ">

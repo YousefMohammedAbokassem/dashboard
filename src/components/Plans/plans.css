@@ -110,76 +110,40 @@
   border-radius: 6px;
 }
 
-.files .row > div > .statistics {
+.plans > .row > div > .planBox {
   background-color: var(--main-color);
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 90px;
+  text-align: center;
 }
-.files .row > div > .statistics > .statistic {
-  border: 1px solid #eee;
+.plans > .row > div > .planBox .price {
+  border: 5px solid var(--main-color);
+  outline: 5px solid transparent;
 }
-.files .row > div > .statistics > .statistic > .fileType > i {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  display: grid;
-  place-items: center;
-  opacity: 0.8;
+.plans > .row > div > .planBox .price.priceGreen {
+  outline-color: var(--green-color);
 }
-.files .row > div > .statistics .upl {
-  background-color: var(--blue-color);
-  transition: 0.3s;
+.plans > .row > div > .planBox .price.priceBlue {
+  outline-color: var(--blue-color);
 }
-.files .row > div > .statistics .upl > i {
-  font-size: 13px;
+.plans > .row > div > .planBox .price.priceOrange {
+  outline-color: var(--orange-color);
 }
-.files .row > div > .statistics .upl:hover {
-  background-color: var(--blue-alt-color);
+.plans > .row > div > .planBox .price h1,
+.plans > .row > div > .planBox .price h2 {
+  color: #fff;
 }
-.files .row > div > .statistics .upl:hover > i {
-  animation: goUpDown infinite linear alternate-reverse 0.8s;
+.plans > .row > div > .planBox .info {
+  border-bottom: 1px solid #eee;
 }
-.files .row > div .boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+@media (max-width:767px) {
+  .plans > .row > div > .planBox .info > .signal > span {
+    font-size: 0.9rem;
+  }
 }
-.files .row > div .boxes .box {
-  height: 200px;
-  background-color: var(--main-color);
+@media (max-width: 350px) {
+  .plans > .row > div > .planBox .info > .signal > span {
+    font-size: 0.7rem;
+  }
 }
-.files .row > div .boxes .box i {
+.plans > .row > div > .planBox .info > i {
   cursor: pointer;
-}
-.files .row > div .boxes .box:hover .imageAndText > img {
-  transform: rotate(5deg);
-}
-.files .row > div .boxes .box .imageAndText > img {
-  width: 64px;
-  height: 64px;
-  transition: 0.3s;
-}
-.files .row > div .boxes .box > footer {
-  border-top: 1px solid #eee;
-}
-.files .row > div .boxes .box > footer > span {
-  font-size: 0.8rem;
-}
-
-@keyframes goUpDown {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-@-webkit-keyframes goUpDown {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}/*# sourceMappingURL=files.css.map */
+}/*# sourceMappingURL=Plans.css.map */

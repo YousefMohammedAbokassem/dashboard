@@ -49,12 +49,18 @@
           height: 200px;
           background-color: var(--main-color);
           i {
+            cursor: pointer;
+          }
+          &:hover .imageAndText > img {
+            transform: rotate(5deg);
           }
           .imageAndText {
             > img {
               width: 64px;
               height: 64px;
               transition: 0.3s;
+              &:hover {
+              }
             }
           }
           > footer {
