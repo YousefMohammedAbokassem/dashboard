@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./go.css";
+import "./go.scss";
 
 export default function Go() {
   useEffect(() => {

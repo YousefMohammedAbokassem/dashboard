@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Page from "./smallCompForDash/Page/Page";
 import Title from "./smallCompForDash/Title/Title";
-import "./dashboard.css";
+import "./dashboard.scss";
 import Progress from "./smallCompForDash/Progress/Progress";
 import Tickets from "./smallCompForDash/tickets/Tickets";
 import News from "./smallCompForDash/News/News";

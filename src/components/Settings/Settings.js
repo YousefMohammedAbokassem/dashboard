@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
-import "./settings.css";
+import "./settings.scss";
 import Control from "./SmallCompOfSettings/control/Control";
 import Info from "./SmallCompOfSettings/Info/Info";
 import Security from "./SmallCompOfSettings/Security ";

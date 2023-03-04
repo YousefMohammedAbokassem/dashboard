@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
-import "./friends.css";
+import "./friends.scss";
 import FriendsPart from "./FriendsPart";
 export default function Friends() {
   useEffect(() => {

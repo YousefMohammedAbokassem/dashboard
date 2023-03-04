@@ -1,6 +1,6 @@
 import React from "react";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
-import "./files.css";
+import "./files.scss";
 import Statistics from "./Statistics";
 import Boxes from "./Boxes/Boxes";
 import { useEffect } from "react";

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Nav.css";
+import "./Nav.scss";
 import { Link, NavLink } from "react-router-dom";
 import Change from "../Change/Change";
 export const goUp = () => {

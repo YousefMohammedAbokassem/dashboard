@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
-import "./profile.css";
+import "./profile.scss";
 import Activities from "./smallCompForProfile/Activities/Activities";
 import Skills from "./smallCompForProfile/Skills/Skills";
 import SmallProfile from "./smallCompForProfile/smallProfile/SmallProfile";

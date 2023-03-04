@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./plans.css";
+import "./plans.scss";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
 import PlanInfoCont1 from "./planCont/PlanInfoCont";
 import PlanInfoCont2 from "./planCont/PlanInfoCont2";

@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Container.css";
+import "./Container.scss";
 import "./css/all.min.css";
 import Header from "../Header/Header";
 import WOW from "wowjs";

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Change from "../Change/Change";
-import "./Header.css";
+import "./Header.scss";
 export default function Header() {
 
  

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
 import Project from "./Project";
-import "./project.css";
+import "./project.scss";
 export default function Projects() {
   useEffect(() => {
     let title = document.getElementById("titlePage");
@@ -16,8 +16,8 @@ export default function Projects() {
       <div className="row p-1 p-md-3  mt-5">
         <div className="container">
           <Project
-            h6="Elzero Dashboard"
-            p="Elzero Dashboard Project Design And Programming And Hosting"
+            h6="Yousef Dashboard"
+            p="Yousef Dashboard Project Design And Programming And Hosting"
             span1="Programming"
             span2="Design"
             span3="Hosting"

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Page from "../Dashbard/smallCompForDash/Page/Page";
-import "./coursera.css";
+import "./coursera.scss";
 import CoursesParts from "./CoursesParts";
 export default function Coursera() {
   useEffect(() => {
