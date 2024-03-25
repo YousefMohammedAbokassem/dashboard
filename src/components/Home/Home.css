@@ -1,0 +1,194 @@
+:root {
+  --main-transition: 0.5s;
+  --padding-top: 100px;
+  --bg-color: #fff;
+  --text-color: #111;
+  --opBg-color: #111;
+  --opText-color: #fff;
+}
+
+::-moz-selection {
+  background-color: #7929ff;
+  color: #fff;
+}
+
+::selection {
+  background-color: #7929ff;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  background-color: #dedede;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #863eff;
+  border-radius: 10px;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
+.radius-6 {
+  border-radius: 6px;
+}
+
+.radius-7 {
+  border-radius: 7px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.radius-9 {
+  border-radius: 9px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-11 {
+  border-radius: 11px;
+}
+
+.radius-12 {
+  border-radius: 12px;
+}
+
+.Home {
+  background: #f4f4f4;
+}
+.Home .prices .price {
+  border-radius: 20px;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .Home .prices .price {
+    width: 90% !important;
+    margin: auto;
+  }
+}
+.Home .prices .price div {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 500px) {
+  .Home .prices .price div {
+    font-size: 12px;
+  }
+}
+.Home .prices .price div span {
+  position: absolute;
+  font-size: 10px;
+  right: -19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 500px) {
+  .Home .prices .price div span {
+    font-size: 7px;
+  }
+}
+.Home .prices .price div span.ar {
+  right: auto;
+  left: -19px;
+}
+@media (max-width: 500px) {
+  .Home .prices .price div small {
+    font-size: 10px;
+  }
+}
+.Home .prices .price .priceIcon {
+  background-color: #ebf0ff;
+}
+.Home .prices .price .priceIcon.red {
+  color: #fdc0d6;
+  background-color: #feedf3;
+}
+.Home .prices .price .priceIcon.orange {
+  color: #fec325;
+  background-color: #fff8e7;
+}
+.Home .prices .price .priceIcon.blue {
+  color: #3d6dfb;
+  background-color: #ebf0ff;
+}
+@media (max-width: 992px) {
+  .Home .box1, .Home .box2 {
+    width: 100% !important;
+  }
+}
+.Home .customers a {
+  color: #7929ff;
+}
+.Home .customers .tableDiv::-webkit-scrollbar {
+  height: 10px;
+}
+.Home .customers .tableDiv table {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.Home .customers .tableDiv table tr {
+  text-align: center;
+}
+.Home .customers .tableDiv table tr th,
+.Home .customers .tableDiv table tr td {
+  padding: 13px 10px;
+}
+@media (max-width: 767px) {
+  .Home .customers .tableDiv table tr th,
+  .Home .customers .tableDiv table tr td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+.Home .customers .tableDiv table tr td.tdColor {
+  color: #7929ff;
+}
+.Home .boxCat {
+  background-color: #fff;
+  border-radius: 20px;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .Home .boxCat {
+    width: 95% !important;
+    margin: auto;
+  }
+}
+.Home .boxCat .image .imgCont {
+  border-radius: 8px;
+  background-color: #f1f8f2;
+}
+.Home .boxCat .image .imgCont img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media (max-width: 360px) {
+  .Home .boxCat .image .imgCont img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+.Home .boxCat .image .icon {
+  background-color: #f1f8f2;
+  color: #111;
+}
+.Home .boxCat .btns button {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+.Home .boxCat .btns button:first-child {
+  color: #70b877;
+  background-color: #f1f8f2;
+}
+.Home .boxCat .btns button:last-child {
+  background-color: #70b877;
+  color: #fff;
+}/*# sourceMappingURL=Home.css.map */

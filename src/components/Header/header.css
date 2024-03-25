@@ -1,0 +1,101 @@
+:root {
+  --main-transition: 0.5s;
+  --padding-top: 100px;
+  --bg-color: #fff;
+  --text-color: #111;
+  --opBg-color: #111;
+  --opText-color: #fff;
+}
+
+::-moz-selection {
+  background-color: #7929ff;
+  color: #fff;
+}
+
+::selection {
+  background-color: #7929ff;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  background-color: #dedede;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #863eff;
+  border-radius: 10px;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
+.radius-6 {
+  border-radius: 6px;
+}
+
+.radius-7 {
+  border-radius: 7px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.radius-9 {
+  border-radius: 9px;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-11 {
+  border-radius: 11px;
+}
+
+.radius-12 {
+  border-radius: 12px;
+}
+
+header {
+  height: 75px;
+  max-height: 75px;
+  background-color: #fff;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+header button {
+  transition: 0.5s;
+}
+header button:first-child {
+  background-color: #863eff;
+  color: white;
+}
+header button:nth-child(2) {
+  border: 2px solid #863eff;
+  color: #863eff;
+}
+header button:hover {
+  background-color: #863eff !important;
+  color: white !important;
+}
+header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media (max-width:500px) {
+  header img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width:500px) {
+  .fontChangeSmall {
+    font-size: 9px;
+  }
+}/*# sourceMappingURL=header.css.map */

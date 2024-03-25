@@ -1,0 +1,199 @@
+@import "../../css/var";
+.Home {
+  background: var(--clr-secondary);
+  color: var(--text-color);
+  a {
+    color: var(--clr-product);
+  }
+  h6 {
+    span {
+    }
+  }
+  .prices {
+    .price {
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      // z-index: 2;
+      @media (min-width: 360px) and (max-width: 767px) {
+        width: 90% !important;
+        margin: auto;
+      }
+      span,
+      .forZIndex {
+        z-index: 10;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 97%;
+        width: 99%;
+
+        // unset:5px
+        background-color: var(--clr-primary);
+        z-index: 1;
+        border-radius: 20px;
+      }
+      .animation {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 500%;
+        width: 20px;
+        background-color: var(--clr-product);
+        animation: rotat 8s infinite linear;
+        // z-index: -2;
+      }
+      div {
+        position: relative;
+        width: fit-content;
+        @media (max-width: 500px) {
+          font-size: 12px;
+        }
+
+        span {
+          // arabic
+          position: absolute;
+          font-size: 10px;
+          right: -19px;
+          top: 50%;
+          transform: translateY(-50%);
+          @media (max-width: 500px) {
+            font-size: 7px;
+          }
+          &.ar {
+            right: auto;
+            left: -19px;
+          }
+        }
+        small {
+          @media (max-width: 500px) {
+            font-size: 10px;
+          }
+        }
+      }
+      .priceIcon {
+        background-color: #ebf0ff;
+        &.red {
+          color: #fdc0d6;
+          background-color: var(--clr-secondary);
+        }
+        &.orange {
+          color: #fec325;
+          background-color: var(--clr-secondary);
+        }
+        &.blue {
+          color: #3d6dfb;
+          background-color: var(--clr-secondary);
+        }
+      }
+    }
+  }
+  // Neworder
+  .box1,
+  .box2 {
+    // width: 75%;
+    @media (max-width: 992px) {
+      width: 100% !important;
+    }
+  }
+  .customers {
+    a {
+      color: var(--clr-product);
+    }
+    // .tableDiv {
+    @media (max-width: 768px) {
+      // .tableDiv {
+      //   max-width: 400px;
+      //   overflow: auto;
+      // }
+      // table{
+      //   min-width: 800px;
+      // }
+      // width: 100%;
+      // max-width: 700px;
+      // overflow: auto;
+    }
+    .tableDiv {
+      &::-webkit-scrollbar {
+        height: 10px;
+      }
+      table {
+        background-color: var(--clr-primary);
+        border-radius: 20px;
+        margin: 20px 0;
+        // ediiiiiiiiiiiiiiiiiiit
+        // min-width: 600px;
+
+        // min-width: 800px;
+        tr {
+          text-align: center;
+
+          th,
+          td {
+            padding: 13px 10px;
+            @media (max-width: 767px) {
+              padding: 10px;
+              font-size: 12px;
+            }
+          }
+          // }
+          td.tdColor {
+            color: var(--clr-product);
+          }
+        }
+      }
+    }
+  }
+  // cat
+  .boxCat {
+    background-color: var(--clr-primary);
+    border-radius: 20px;
+    @media (min-width: 360px) and (max-width: 767px) {
+      width: 95% !important;
+      margin: auto;
+    }
+    .image {
+      .imgCont {
+        border-radius: 8px;
+        background-color: var(--clr-primary);
+
+        img {
+          @include circle(40px);
+          @media (max-width: 360px) {
+            @include circle(25px);
+          }
+        }
+      }
+      .icon {
+        background-color: var(--clr-primary);
+        color: var(--text-color);
+      }
+    }
+    .btns {
+      button {
+        border: none;
+        // background-color: var(--clr-product);
+        border-radius: 8px;
+        // color: #fff;
+        &:first-child {
+          color: var(--text-color);
+          background-color: var(--clr-product);
+        }
+        &:last-child {
+          color: var(--text-color);
+          background-color: var(--clr-product);
+        }
+      }
+    }
+  }
+}
+@keyframes rotat {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

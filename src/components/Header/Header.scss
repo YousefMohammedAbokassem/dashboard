@@ -1,87 +1,50 @@
-@import "../../var";
+@import "../../css/var";
 header {
-  background-color: var(--main-color);
-  box-shadow: 0px 1px 9px var(--shadow-color);
+  height: 75px;
+  max-height: 75px;
+  z-index: 1000;
   position: sticky;
   top: 0;
-  z-index: 1000000;
-  > .searchInput {
-    > input {
-      outline: none;
-      width: 180px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 14px;
-      padding-left: 25px;
-      transition: padding, width, 0.3s;
-      background-color: var(--main-color);
-      text-transform: capitalize;
-      @include media("verySmall") {
-        width: 150px;
-      }
-      &:focus {
-        width: 200px;
-        padding-left: 30px;
-        @include media("verySmall") {
-          width: 170px;
-        }
-      }
-      &::placeholder {
-        color: var(--text-color);
-        text-transform: capitalize;
-      }
+  .logoAndSec {
+    .logo {
     }
-    > .searchIcon {
-      position: absolute;
-      left: 6px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-color);
+    span {
+    }
+    .logOut{
+      cursor: pointer;
+      background-color: var(--clr-product);
+      color: #fff;
+      padding: 5px ;
+      border-radius: 5px;
     }
   }
-  > .account {
-    > .LightNight {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 80px;
-      margin-right: 10px;
-      padding: 10px 5px;
-      border-radius: 30px;
-      background-color: var(--text-color);
-      > span {
-        @include circle(30px);
-        position: absolute;
-        cursor: pointer;
-        background-color: var(--main-color);
-        transform: translateX(2.5rem);
-        transition: 0.3s;
-      }
-      > .theme {
-        color: var(--main-color);
-        font-size: 21px;
-        cursor: pointer;
-      }
+  button {
+    // border: none;
+    transition: 0.5s;
+    &:first-child {
+      background-color: var(--clr-product);
+      color: white;
     }
-    > span {
-      position: relative;
-      > .notification {
-        font-size: 22px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        @include circle(10px);
-        background-color: red;
-        right: -3px;
-        top: -3px;
-      }
+    &:nth-child(2) {
+      border: 2px solid var(--clr-product);
+      color: var(--clr-product);
     }
-    > .accountImage {
-      > img {
-        @include circle(32px);
-      }
+    &:hover {
+      background-color: var(--clr-product) !important;
+      color: white !important;
     }
+  }
+  span {
+  }
+  > div > img {
+    @include circle(40px);
+    @include media("smallMobile") {
+      @include circle(25px);
+    }
+  }
+}
+.fontChangeSmall {
+  @include media("smallMobile") {
+    font-size: 9px;
   }
 }
